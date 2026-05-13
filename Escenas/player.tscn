@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c1724c851gxyx"]
+
+[ext_resource type="Texture2D" uid="uid://byeqhyq6cfoq1" path="res://Sprites/Personajes/Ainara/Idle Ainara-Sheet.png" id="1_cnkc8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8vih"]
+atlas = ExtResource("1_cnkc8")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgqwx"]
+atlas = ExtResource("1_cnkc8")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6njrx"]
+atlas = ExtResource("1_cnkc8")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgfde"]
+atlas = ExtResource("1_cnkc8")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xlwfv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8vih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgqwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6njrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgfde")
+}],
+"loop": false,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7v5l4"]
+size = Vector2(16, 42)
+
+[node name="Player" type="Node2D" unique_id=744458154]
+
+[node name="Ainara_Sprite" type="AnimatedSprite2D" parent="." unique_id=1917629095]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_xlwfv")
+animation = &"Idle"
+frame = 3
+frame_progress = 1.0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=358382593]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=475896811]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_7v5l4")
