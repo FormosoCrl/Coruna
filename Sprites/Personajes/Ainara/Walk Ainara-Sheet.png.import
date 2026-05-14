@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0xh8hyv5j3co"
-path="res://.godot/imported/Idle Ainara-Sheet.png-4ac61b38553c8eec8c9001a89827fff8.ctex"
+uid="uid://bvenqe2hlf23q"
+path="res://.godot/imported/Walk Ainara-Sheet.png-6356e246e6f4bf904827ceffef45f9ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Personajes/Ainara/Idle Ainara-Sheet.png"
-dest_files=["res://.godot/imported/Idle Ainara-Sheet.png-4ac61b38553c8eec8c9001a89827fff8.ctex"]
+source_file="res://Sprites/Personajes/Ainara/Walk Ainara-Sheet.png"
+dest_files=["res://.godot/imported/Walk Ainara-Sheet.png-6356e246e6f4bf904827ceffef45f9ee.ctex"]
 
 [params]
 
